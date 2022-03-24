@@ -1,0 +1,11 @@
+ipeline{
+    agent any
+    stages{
+        stage('hello'){
+            steps{
+                bat 'git-version'
+                bat 'java-version'
+            }
+        }
+    }
+}
